@@ -1,0 +1,161 @@
+*{margin: 0;font-family: Arial, Helvetica, sans-serif;}
+.header{display: flex;
+       justify-content: space-between;
+       height: 9.5vh;
+       align-items: center;
+       padding: 0vh 17vw;
+       position: fixed; 
+       top: 0; 
+       right: 0;
+       left: 0;
+       background-color: hsla(0,0%,100%,.98);
+       transition-property: box-shadow;
+       transition-duration: 0.25s;
+       transition-timing-function: ease;
+       transition-delay: 0s;}
+.header-logo{width: 17vw;}
+.navbar{display: flex;position: relative;}
+#about-us, #career, #departments{padding: 0vh 1vw;}
+#about-us, #career, #departments{text-decoration: none;font-size: 90%;}
+#about-us {color: #00b39b;}
+#career, #departments{color: #ababab;}
+#career:hover{color:#00b39b;}
+#departments:hover{color:#00b39b;}
+.drop-down-menu{display: none;}
+.drop-down-menu{color:#ababab;}
+#departments:hover .drop-down-menu{
+    padding-top: 1vh;
+    position: absolute;
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    right: -1.5vw;
+    box-shadow: 0vw 0.7vh 0.5vw #e2e2e2;}
+.drop-down-menu p:hover{
+  background-color:#f5f4f4;
+  color: #00b39b;
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
+  transition-delay: 0s;}
+.drop-down-menu p{padding: 2vh 1vw;}
+
+
+/*section1 css*/
+.motto-and-presentation{margin-top: 14vh;}
+.motto{display: flex;flex-direction: column; align-items: center;color: #00b39b;font-size: 25pt;height: 15vh;justify-content: space-between;}
+.presentation{display: flex;margin: 10vh 17vw;color: #747474;line-height: 1.7;}
+#p1{width: 50%;margin-right: 0.5vw;}
+#p2{width: 50%;margin-left: 0.5vw;}
+
+/*section2 css*/
+.two-boxes{margin-top: 15vh;display: flex;margin: 12vh 17vw;}
+.left-box{background-color: #00ccb1;margin-right:0.5vw; border-radius: 0.7vw;
+background-image: url(https://www.docplanner.com/img/screen-marketplace@2x.png);background-size:75% 60%;background-repeat: no-repeat; 
+background-position-x: 15vw;background-position-y: 20vh;}
+.right-box{background-color: #3d83df;margin-left: 0.5vw;border-radius: 0.7vw;
+background-image: url(https://www.docplanner.com/img/screen-saas@2x.png);background-repeat: no-repeat; background-position-x: 15vw;
+background-position-y: 20vh;background-size:75% 60%;}
+#left-box-pic{right: 0;bottom: 1vh;}
+.two-boxes h6{color: hsla(0, 0%, 100%, 0.7);font-size: 10pt;line-height: 3;}
+.two-boxes p{color: #fff;font-size: 20pt;}
+.left-box, .right-box{padding-left: 2.5vw;padding-top: 2.5vh;height: 50vh;width: 40vw;}
+#select{height: 5vh;width: 12vw;border: hidden;font-size: 9pt;border-radius: 0.2vw;padding-left: 1.2vw; margin-top: 4vh;font-weight: 600;}
+#select:hover{background-color: rgb(228, 247, 248);}
+
+/*section3 css*/
+.brands img{width: 7vw; height: 3vh;padding-left:2vw;padding-bottom: 2vh;}
+.brands-motto{color: #00b39b; font-size: 20pt;width: 27vw;line-height: 1.2;}
+.brands{display: flex;margin: 10vh 17vw;}
+.brands-logos{display: flex;flex-wrap: wrap;}
+.brands-logos a{padding: 0 20px;}
+.brands-logos svg:hover{
+  fill:#00bfa5;
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
+  transition-delay: 0s;}
+
+/*section4 css*/
+.big-green-section{background-color:#e5faf8 ;background-image: url(https://www.docplanner.com/img/logo.png);
+  background-repeat: no-repeat;height:85vh ;background-position-y: 40vh;background-position-x: 8vw;}
+.container{height: 100%;display: flex;margin: 0vh 17vw;}
+.left-side{width: 51%;height:em;padding-top: 9vh;}
+.left-side h6{color:#00b39b;font-size:24pt;font-weight: lighter;line-height: 1.5;}
+.left-side p{color:#747474;font-size: 11pt;line-height:1.8;padding-top: 2vh;}
+
+.right-side{width: 49%;height:em;display: flex;text-align: center;flex-wrap: wrap;flex-direction: column;justify-content: center;
+align-content:space-between;}
+
+.right-side img{padding-bottom:1.5vh;width: 40px;}
+.right-side h6{color:#00b39b;font-size:17pt;font-weight:lighter;line-height:1.3;padding: 0px 30px}
+.right-side p{color:#747474;font-size:10pt;line-height: 1.3;padding:2vh 20px;}
+
+.card-1{margin-top:3.5vh;}
+.card-2{margin-top:3.5vh;}
+.card-3{margin-top:-5vh;}
+.card-4{margin-top:3.5vh;}
+
+div[class*="card"]{width:228px;height:35vh;background-color: white; border-radius: 0.5vw;
+  display: flex;flex-direction: column;justify-content: center;align-items: center;}
+
+
+/*section5 css*/
+.paragraph{text-align: center;height: 50vh;margin: 0 17vw;
+  display: flex;flex-direction: column;justify-content: center;align-items: center;}
+  .paragraph h3{color:#00b39b;font-size:23pt;font-weight: lighter;line-height: 1.3;}
+  .paragraph p{color:#747474;font-size:10.5pt;line-height: 1.8;padding-top: 2vh;}
+
+/*section6 css*/
+.warsaw, .barcelona, .istanbul, .rome, .mexico-city, .curitiba{height: 50vh;width: 20.5vw;margin-bottom: 3vh;
+  border-radius: 0.5vw;border:1px solid rgb(247, 247, 247);}
+  .warsaw:hover{box-shadow: 0vh 2vw 4vw #e2e2e2;       
+       transition-duration: 0.25s;
+       transition-timing-function: ease;
+       transition-delay: 0s;}
+  .barcelona:hover{box-shadow: 0vh 2vw 4vw #e2e2e2;       
+       transition-duration: 0.25s;
+       transition-timing-function: ease;
+       transition-delay: 0s;}
+  .istanbul:hover{box-shadow: 0vh 2vw 4vw #e2e2e2;       
+       transition-duration: 0.25s;
+       transition-timing-function: ease;
+       transition-delay: 0s;}
+  .rome:hover{box-shadow: 0vh 2vw 4vw #e2e2e2;       
+       transition-duration: 0.25s;
+       transition-timing-function: ease;
+       transition-delay: 0s;}
+  .mexico-city:hover{box-shadow: 0vh 2vw 4vw #e2e2e2;       
+       transition-duration: 0.25s;
+       transition-timing-function: ease;
+       transition-delay: 0s;}
+  .curitiba:hover{box-shadow: 0vh 2vw 4vw #e2e2e2;       
+       transition-duration: 0.25s;
+       transition-timing-function: ease;
+       transition-delay: 0s;}
+
+  .cities{display:flex;flex-wrap: wrap;margin: 0 17vw 12vh;justify-content:space-between;align-content:space-between;height: fit-content;}
+  .cities p{font-size: 14pt;}
+  .cities a{text-decoration: none;}
+
+  .warsaw-pic, .barcelona-pic, .istanbul-pic, .rome-pic,.mexico-pic, .curitiba-pic
+  {height: 80%;width:100%;border-radius:0.5vw 0.5vw 0 0;background-repeat: no-repeat;}
+
+  .warsaw-text, .barcelona-text, .istanbul-text, .rome-text, .mexico-text, .curitiba-text
+  {padding:0 1vw;height: 20%;display:flex;align-items: center;color:#747474;font-size:10pt;justify-content: space-between;}
+  
+  .warsaw-pic{background-image:url(https://www.docplanner.com/images/warsaw.png)}
+  .barcelona-pic{background-image:url(https://www.docplanner.com/images/barcelona.png)}
+  .istanbul-pic{background-image:url(https://www.docplanner.com/images/istanbul.png)}
+  .rome-pic{background-image:url(https://www.docplanner.com/images/rome.png)}
+  .mexico-pic{background-image:url(https://www.docplanner.com/images/mexico-city.png)}
+  .curitiba-pic{background-image:url(https://www.docplanner.com/images/curitiba.png)}
+   
+  .city-button{background-color: #3d83df;width:7vw;height:4vh;border: hidden; border-radius: 0.3vw;font-size: 7.5pt;color:white;font-weight: 600;}
+  .city-button:hover{background-color:#1662c6;}
+
+  /*Footer css*/
+  footer{height: 14vh;border-top: 1px solid #eef2f2;text-align: center;color: #ababab;font-size:9pt;padding-top: 1.5vh;}
+  #p1-footer{line-height: 4;}
+  #p2-footer{line-height: 2;}
+  footer a{color: #3d83df;text-decoration: none;}
+  footer a:hover{text-decoration: underline;}
